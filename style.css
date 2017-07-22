@@ -1,0 +1,290 @@
+body {
+    background: #A7A7A7;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 17px;
+    font-family: monospace;
+}
+
+.container {
+    width: 850px;
+    margin: 0 auto;
+    border: 1px solid grey;
+    position: relative;
+    background-color: red;
+}
+
+.container::before {
+    position: absolute;
+    background-color: blue;
+}
+
+.container::after {
+    clear: both;
+    display: block;
+}
+
+.container .left-element,
+.container .right-element {
+    box-sizing: border-box;
+    float: left;
+}
+
+.container .left-element {
+    width: 250px;
+    background-color: #A5A0B7;
+}
+
+.container .left-element .profile {
+    position: relative;
+    background-color: #8d9e78;
+    padding: 15px 15px;
+    position: relative;
+}
+
+.container .left-element .profile .name {
+    text-align: center;
+    background: #8d9e78;
+}
+
+.container .left-element .profile img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.container .left-element h3 .name {
+    align-content: center;
+    font-family: monospace;
+}
+
+.container .left-element .about {
+    position: relative;
+    width: 100%px;
+    padding: 5px 8px;
+    font-size: 19px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.container .left-element .contact {
+    position: relative;
+}
+
+.container .left-element .contact>div {
+    width: 100%;
+    font-size: 18px;
+    display: table;
+    padding: 4px 4px;
+    font-size: 20px;
+}
+
+.container .left-element .contact div i {
+    display: table-cell;
+    width: 30px;
+    box-sizing: border-box;
+    clear: both;
+    position: relative;
+}
+
+.container .left-element .contact div span {
+    width: calc(100%-45px);
+    display: table-cell;
+    clear: both;
+    position: relative;
+}
+
+.container .left-element .contact span,
+i {
+    display: inline-block;
+}
+
+.contact .left-element .contact div i {
+    color: greenyellow;
+}
+
+.container .right-element {
+    width: 600px;
+    padding: 30px 25px;
+    background-color: #FFFFFF;
+    position: relative;
+    background-color: #225064;
+}
+
+.container .right-element h3 {
+    font-size: 26px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/*Work and Education*/
+
+.container .right-element .work-education {
+    width: 100%;
+    position: relative;
+    border: solid 1px black;
+    background-color: #3C93AF;
+    display: table;
+}
+
+.container .right-element .work-education .work,
+.education {
+    float: left;
+    width: 50%;
+}
+
+
+/*Soft skills*/
+
+.container .right-element .soft-skills {
+    position: relative;
+    width: 100%;
+    border: solid 1px black;
+    padding: 15px 0px;
+    margin: 15px 0px;
+    display: inline-block;
+    z-index: 2;
+    background-color: #3C93AF;
+}
+
+.container .right-element .soft-skills li {
+    display: flex;
+    width: 510px;
+    height: 40px;
+    padding: 2px 2px;
+    font-family: monospace;
+    font-size: 18px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.container .right-element .soft-skills li span {
+    display: block;
+    width: 180px;
+    position: relative;
+}
+
+.container .right-element .soft-skills li .ratings-bar {
+    width: calc(100%-180px);
+    position: relative;
+}
+
+.container .right-element .interests {
+    width: 100%;
+    border: solid 1px black;
+    position: relative;
+    padding: 15px 0px;
+    margin: 15px 0px;
+    z-index: 2;
+    background-color: #3C93AF;
+}
+
+.container .right-element .interests-items {
+    box-sizing: border-box;
+    display: flex;
+    padding: 7px 7px;
+    margin: 3px 3px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.container .right-element .interests-items div {
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/*Rating effect*/
+
+.ratings {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.ratings::after,
+.ratings::before {
+    display: inline-block;
+    position: absolute;
+    font-size: 25px;
+    font-family: "FontAwesome";
+}
+
+.ratings::before {
+    color: #F9C8D3;
+    content: "\f006\f006\f006\f006\f006";
+}
+
+.ratings::after {
+    color: #EF005B;
+}
+
+.ratings.half::after {
+    content: "\f089";
+}
+
+.ratings.one::after {
+    content: "\f005";
+}
+
+.ratings.onehalf::after {
+    content: "\f005\f089";
+}
+
+.rating.two::after {
+    content: "\f005\f005";
+}
+
+.ratings.three::after {
+    content: "\f005\f005\f005";
+}
+
+.ratings.four::after {
+    content: "\f005\f005\f005\f005";
+}
+
+.ratings.five::after {
+    content: "\f005\f005\f005\f005\f005";
+}
+
+.ratings.
+/*
+.image {
+    border-bottom: 1px dotted grey;
+    background-color: #8EB3CC;
+}
+
+
+.left-element {
+    width: 200px;
+    float: left;
+    border-right: dotted 1px grey;
+    height: inherit;
+    position: relative;
+}
+
+.left-element .information {
+    background-color: #39A0D7;
+    width: 200px;
+    height: auto;
+    position: relative;
+}
+
+.right-element {
+    width: 450px;
+    float: right;
+    height: inherit;
+}
+*/
